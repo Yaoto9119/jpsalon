@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#2b47a3, #4cc0ff, #ffffff);
+    height: 100vh;
+    overflow: hidden;
+  }
+.toolbar button:hover{
+    background-color: #ececec;
+}
+.toolbar button{
+    margin-right: 10px;
+    margin-top: 4px;
+    padding: 5px 5px;
+}
+.toolbar img.logo {
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+}
+.toolbar {
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: left;
+}
+.toolbar a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.toolbar a:hover {
+    background-color: #ececec;
+    color: black;
+}
+.logout-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.card {
+    width: 60%;
+    max-width: 600px;
+    margin: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+.card h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #1189d8;
+}
+.card input, .card button, .card .radio-group {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.card input {
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.card button {
+    height: 55px;
+    background-color: #1189d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.card button:hover{
+    scale: 101%;
+    color: #2b47a3;
+    transition: 0.2s;
+}
+.card .radio-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.card .radio-group input {
+    width: auto;
+}
+.card .radio-group label {
+    margin: 0 5px;
+}

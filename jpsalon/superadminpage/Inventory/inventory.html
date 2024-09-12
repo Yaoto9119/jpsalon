@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Page</title>
+    <link rel="stylesheet" href="inventory.css"> <!-- Link to CSS for styling -->
+    <script type="module" src="inventory.js" defer></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+    <div class="toolbar">
+        <img src="../superadminpage/jpsalon_border.png" alt="Logo" class="logo" width="50" height="50">
+        <a href="Users/users.html">Users</a>
+        <a href="Inventory/inventory.html">Inventory</a>
+        <a href="#view-reports">Reports</a>
+        <button class="logout-button" onclick="logoutFunction()">
+            <img src="logout.png" alt="Logout" class="logout" width="35" height="35" id="logoutbtn">
+        </button>
+    </div>
+    <div class="container">
+        <div class="card">
+            <header>
+                <h1>Inventory</h1>
+            </header>
+            <div class="container">
+                <table id="inventoryTable">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Code</th>
+                            <th>Color</th>
+                            <th>Brand</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users and Roles</title>
+    <link rel="stylesheet" href="users.css"> <!-- Add your CSS file if needed -->
+    <script type="module" src="users.js" defer></script> <!-- JavaScript file -->
+</head>
+<body>
+    <div class="toolbar">
+        <img src="../superadminpage/jpsalon_border.png" alt="Logo" class="logo" width="50" height="50">
+        <a href="Users/users.html">Users</a>
+        <a href="Inventory/inventory.html">Inventory</a>
+        <a href="#view-reports">Reports</a>
+        <button class="logout-button" onclick="logoutFunction()">
+            <img src="logout.png" alt="Logout" class="logout" width="35" height="35" id="logoutbtn">
+        </button>
+    </div>
+    <div class="container">
+        <div class="card">
+        <h1>Users and Roles</h1>
+        <table id="usersTable">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- User rows will be inserted here -->
+            </tbody>
+        </table>
+        </div>
+    </div>
+</body>
+</html>

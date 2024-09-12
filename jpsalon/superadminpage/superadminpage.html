@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Admin Page</title>
+    <link rel="stylesheet" href="superadminpage.css">
+    <script type="module" src="superadminpage.js" defer></script>
+</head>
+<body>
+    <div class="toolbar">
+        <img src="../jpsalon_border.png" alt="Logo" class="logo" width="50" height="50">
+        <a href="../Users/users.html">Users</a>
+        <a href="../Inventory/inventory.html">Inventory</a>
+        <a href="#view-reports">Reports</a>
+        <button class="logout-button" onclick="logoutFunction()">
+            <img src="../logout.png" alt="Logout" class="logout" width="35" height="35" id="logoutbtn">
+        </button>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h1>Super Admin</h1>
+            <input type="text" id="addNametxt" placeholder="Name">
+            <input type="password" id="addPasswordtxt" placeholder="Password">
+            <div class="radio-group">
+                <label><input type="radio" name="role" id="adminrdbtn" value="admin"> Admin</label>
+                <label><input type="radio" name="role" id="userrdbtn" value="user"> User</label>
+            </div>
+            <button id="addUserbtn">Add User</button>
+            <input type="text" id="currentName" placeholder="Current Name">
+            <input type="text" id="newName" placeholder="New Name">
+            <input type="password" id="newPassword" placeholder="New Password">
+            <button id="updatebtn">Update</button>
+            <input type="text" id="deleteUsertxt" placeholder="Enter Name to Delete Data">
+            <button id="deletebtn">Delete</button>
+        </div>
+    </div>
+</body>
+</html>
